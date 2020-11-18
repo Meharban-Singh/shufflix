@@ -47,7 +47,11 @@ export default class Form extends React.Component {
                 })
 
                 // Get a random season 
-                let randomSeason = seasons[Math.floor(Math.random() * seasons.length)];
+                let randomSeason = (
+                        seasons.length === 0 
+                        ? Math.floor(Math.random() * totalSeasons) + 1
+                        : seasons[Math.floor(Math.random() * seasons.length)] 
+                    );
 
                 fetch(`http://www.omdbapi.com/?apikey=${config.API_KEY}&t=${query}&season=${randomSeason}`)
                     .then(res => res.json())
