@@ -71,11 +71,11 @@ export default class Form extends React.Component {
         return (
             <div className="main">
 
-                <h1>Shuflix</h1>
+                <h1>Shufflix</h1>
 
                 <form onSubmit={this.handleSubmit}>
-                    <input className="show" type="text" value={this.state.search} onChange={this.handleSearchChange} />
-                    <input className="seasons" type="text" value={this.state.seasons} onChange={this.handleSeasonsChange} />
+                    <input placeholder="Enter TV show" className="show" type="text" value={this.state.search} onChange={this.handleSearchChange} />
+                    <input placeholder="All Seasons" className="seasons" type="text" value={this.state.seasons} onChange={this.handleSeasonsChange} />
                     <input type="submit" value="Submit" />
                 </form>
 
