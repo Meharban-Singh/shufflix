@@ -60,7 +60,7 @@ export default class Form extends React.Component {
                         let allEpisodes = data.Episodes;
                         let randomEpisode = allEpisodes[Math.floor(Math.random() * allEpisodes.length)];
                         
-                        self.setState({ result: randomEpisode });
+                        self.setState({ result: {...randomEpisode, season: randomSeason} });
                     })
                     .catch(err => console.log(err))
             })
