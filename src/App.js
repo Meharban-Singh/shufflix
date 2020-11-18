@@ -69,12 +69,13 @@ export default class Form extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="main">
+
+                <h1>Shuflix</h1>
 
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" value={this.state.search} onChange={this.handleSearchChange} />
-                    <input type="text" value={this.state.seasons} onChange={this.handleSeasonsChange} />
-
+                    <input className="show" type="text" value={this.state.search} onChange={this.handleSearchChange} />
+                    <input className="seasons" type="text" value={this.state.seasons} onChange={this.handleSeasonsChange} />
                     <input type="submit" value="Submit" />
                 </form>
 
