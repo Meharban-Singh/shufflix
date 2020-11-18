@@ -29,7 +29,7 @@ export default class Form extends React.Component {
         let self = this;
 
         // GET show from the api
-        fetch(`http://www.omdbapi.com/?apikey=${config.API_KEY}&t=${query}`)
+        fetch(`https://www.omdbapi.com/?apikey=${config.API_KEY}&t=${query}`)
             .then(res => res.json())
             .then(data => {
 
@@ -53,7 +53,7 @@ export default class Form extends React.Component {
                         : seasons[Math.floor(Math.random() * seasons.length)] 
                     );
 
-                fetch(`http://www.omdbapi.com/?apikey=${config.API_KEY}&t=${query}&season=${randomSeason}`)
+                fetch(`https://www.omdbapi.com/?apikey=${config.API_KEY}&t=${query}&season=${randomSeason}`)
                     .then(res => res.json())
                     .then(data => {
                         // Get random episode
