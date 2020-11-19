@@ -5,4 +5,9 @@
 
 .details a {
     color: #f05454;  
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
 }   

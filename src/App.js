@@ -69,19 +69,25 @@ export default class Form extends React.Component {
 
     render() {
         return (
-            <div className="main">
+            <React.Fragment>
+                <div className="donate-container">
+                    <a className="donate-button" href="https://www.buymeacoffee.com/mrrobot">Support</a>
+                </div>
 
-                <h1>Shufflix</h1>
+                <div className="main">
 
-                <form onSubmit={this.handleSubmit}>
-                    <input placeholder="Enter TV show" className="show" type="text" value={this.state.search} onChange={this.handleSearchChange} />
-                    <input placeholder="All Seasons" className="seasons" type="text" value={this.state.seasons} onChange={this.handleSeasonsChange} />
-                    <input type="submit" value="Submit" />
-                </form>
+                    <h1>Shufflix</h1>
 
-                {this.state.result !== '' ? <Details data={this.state.result} /> : <div></div>}
+                    <form onSubmit={this.handleSubmit}>
+                        <input placeholder="Enter TV show" className="show" type="text" value={this.state.search} onChange={this.handleSearchChange} />
+                        <input placeholder="All Seasons" className="seasons" type="text" value={this.state.seasons} onChange={this.handleSeasonsChange} />
+                        <input type="submit" value="Submit" />
+                    </form>
 
-            </div>
+                    {this.state.result !== '' ? <Details data={this.state.result} /> : <div></div>}
+
+                </div>
+            </React.Fragment>
         );
     }
 }

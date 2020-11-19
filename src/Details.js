@@ -8,7 +8,10 @@ export default class Details extends React.Component {
                 S<span className="season-number">{this.props.data.season}</span>-E
                 <span className="episode-number">{this.props.data.Episode}</span>
                 &nbsp;<span className="title">{this.props.data.Title}</span>
-                &nbsp;<a target="_blank" href={`https://www.imdb.com/title/${this.props.data.imdbID}/`}>(IMDB - {this.props.data.imdbRating})</a>
+                &nbsp;
+                <a target="_blank" href={`https://www.imdb.com/title/${this.props.data.imdbID}/`}>
+                    ({this.props.data.imdbRating}&#x2605;)
+                </a>
             </div>
         );
     }
