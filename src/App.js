@@ -87,6 +87,24 @@ export default class Form extends React.Component {
                     {this.state.result !== '' ? <Details data={this.state.result} /> : <div></div>}
 
                 </div>
+                
+                <div className="help">
+                    <h2>How does this work?</h2>
+
+                    <p>
+                        This tool randomizes an episode from all the episodes in a TV show. Good while looking for a random episode to watch of <i>The Office</i> during lunch :)
+                    </p>
+                    
+                    <p>
+                        Enter a TV show name in the first box. Make sure to spell it correct.
+                    </p>
+
+                    <p>
+                        (OPTIONAL) Enter season numbers you want to shuffle the episode from, separated by space. 
+                        Example: 1 2 5 100 would randomize any episode within season 1, 2, 5 or 100. 
+                        If left blank, system randomizes all episodes of the TV show.
+                    </p>
+                </div>
             </React.Fragment>
         );
     }
