@@ -1,3 +1,5 @@
+/* Details page that shows the episode name, and rating upon a successful request*/
+
 import './Details.css'
 import React from 'react'
 
