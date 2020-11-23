@@ -5,7 +5,7 @@ Shufflix
 Shuffle Netflix TV show episodes. A web app that provides a random episode from any/all of the seasons of a TV show.
 
 ### Live Version
-[Demo](www.shufflix.tech)
+[Demo](http://www.shufflix.tech)
 
 ### Set-Up
 1. Download all the files from this repo.
