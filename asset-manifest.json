@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/shufflix/static/css/main.bdfc5cdf.chunk.css",
+    "main.js": "/shufflix/static/js/main.fc13e1b1.chunk.js",
+    "main.js.map": "/shufflix/static/js/main.fc13e1b1.chunk.js.map",
+    "runtime-main.js": "/shufflix/static/js/runtime-main.3517e953.js",
+    "runtime-main.js.map": "/shufflix/static/js/runtime-main.3517e953.js.map",
+    "static/js/2.53cd1b37.chunk.js": "/shufflix/static/js/2.53cd1b37.chunk.js",
+    "static/js/2.53cd1b37.chunk.js.map": "/shufflix/static/js/2.53cd1b37.chunk.js.map",
+    "index.html": "/shufflix/index.html",
+    "static/css/main.bdfc5cdf.chunk.css.map": "/shufflix/static/css/main.bdfc5cdf.chunk.css.map",
+    "static/js/2.53cd1b37.chunk.js.LICENSE.txt": "/shufflix/static/js/2.53cd1b37.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3517e953.js",
+    "static/js/2.53cd1b37.chunk.js",
+    "static/css/main.bdfc5cdf.chunk.css",
+    "static/js/main.fc13e1b1.chunk.js"
+  ]
+}
